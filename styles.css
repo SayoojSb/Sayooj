@@ -124,3 +124,45 @@ footer {
         font-size: 16px;
     }
 }
+
+@media (min-width: 1200px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .center {
+        margin: 50px auto;
+        max-width: 1200px;
+    }
+}
+
+/* For tablets (between 768px and 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .center {
+        margin: 30px auto;
+        max-width: 800px;
+    }
+}
+
+/* For mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .center {
+        margin: 20px auto;
+        max-width: 100%;
+    }
+    .intro h1 {
+        font-size: 24px;
+    }
+}
